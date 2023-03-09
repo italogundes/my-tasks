@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import TableTasks from './components/TableTasks';
 
@@ -7,12 +7,17 @@ const App = () => {
   const [task, setTask] = useState('');
   const inputTask = useRef();
 
+  useEffect(() => {
+    console.log(tasks);
+    localStorage.setItem('tasks', tasks);
+  },[tasks])
+  
+
   function handleSubmit(event) {
     event.preventDefault();
     setTasks([...tasks, task]);
     setTask('');
     inputTask.current.focus();
-    console.log(tasks);
   }
 
   function changeInput({target}){
@@ -26,7 +31,7 @@ const App = () => {
       <form onSubmit={handleSubmit} className='input-content'>
         <input ref={inputTask} onChange={changeInput} value={task} type="text" placeholder='Nova Tarefa'/> <button className='btn-adicionar'>+</button>
       </form>
-      <TableTasks/>
+      <TableTasks tasks={tasks}/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TableTasks = () => {
+const TableTasks = ({tasks}) => {
   return (
     <div className='table-content'>
       <table style={{border: '1px solid black'}}>
@@ -9,26 +9,13 @@ const TableTasks = () => {
           <th>Descrição</th>
           <th>Ação</th>
         </tr>
-        <tr>
-          <td><input type="checkbox"/></td>
-          <td>Ir ao supermercado</td>
-          <td>Excluir</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"/></td>
-          <td>Ir ao supermercado</td>
-          <td>Excluir</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"/></td>
-          <td>Ir ao supermercado</td>
-          <td>Excluir</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"/></td>
-          <td>Ir ao supermercado</td>
-          <td>Excluir</td>
-        </tr>
+        {tasks.map((task, index) => {
+          return <tr key={index}>
+            <td><input type="checkbox" /></td>
+            <td>{task}</td>
+            <td>excluir</td>
+          </tr>
+        })}
       </table>
     </div>
   )
