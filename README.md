@@ -38,3 +38,9 @@
 </ul>
 
 # Autores
+[<img src="https://user-images.githubusercontent.com/25756680/225986055-d3c83446-2115-4082-9eca-aa4814d406c2.jpeg" width=115><br><sub>Italo Costa</sub>](https://github.com/italogundes)
+
+
+
+
+
