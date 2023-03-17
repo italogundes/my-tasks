@@ -20,7 +20,7 @@
 2. Entrar na pasta do projeto e baixar as dependências do node, utilizando o comando:
    npm install
 
-2.1 Certificar-se de que a pasta 'node_modules' foi criada.
+   2.1 Certificar-se de que a pasta 'node_modules' foi criada.
 
 3. Executar o comando 'npm start' para executar o servidor local.
 
@@ -34,6 +34,7 @@
   <li>HTML5</li>
   <li>CSS3</li>
   <li>ReactJS</li>
+  <li>React Hooks</li>
 </ul>
 
 # Autores
