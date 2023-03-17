@@ -11,3 +11,29 @@
 - `Cadastrar Tarefa`: Possibilita o cadastro de quantas tarefas o usuário desejar
 - `Check de Tarefa`: O usuário pode marcar quais tarefas na lista já realizou
 - `Excluir Tarefa`: O usuário pode excluir as tarefas que já concluiu ou caso tenha cadastrado errado
+
+# 📁 Acesso ao projeto
+
+1. Clonar o projeto através do comando:
+   git clone https://github.com/italogundes/my-tasks.git
+
+2. Entrar na pasta do projeto e baixar as dependências do node, utilizando o comando:
+   npm install
+
+2.1 Certificar-se de que a pasta 'node_modules' foi criada.
+
+3. Executar o comando 'npm start' para executar o servidor local.
+
+
+# 🛠️ Rodando o projeto
+
+![demo_project](https://user-images.githubusercontent.com/25756680/225981284-3b13450b-cb43-4e08-9bd7-4bab36b7b7fc.gif)
+
+<h2>✔️ Técnicas e Tecnologias Utilizadas</h2>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>ReactJS</li>
+</ul>
+
+# Autores
