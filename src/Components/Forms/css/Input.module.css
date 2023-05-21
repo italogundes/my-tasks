@@ -1,0 +1,18 @@
+.inputContainer input {
+  padding: 7px;
+  width: 400px;
+  height: 35px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid rgb(248, 190, 66);
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.error {
+  color: #f31;
+  font-size: 0.875rem;
+  margin-top: 0.45rem;
+  border: 1px solid black;
+}

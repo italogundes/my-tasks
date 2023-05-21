@@ -1,0 +1,25 @@
+.areaTasksContainer {
+  background-color: #f1db42;
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid black;
+}
+
+.areaTasks {
+  margin: 0px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.areaTasks h1 {
+  margin-bottom: 10px;
+}
+
+.formTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

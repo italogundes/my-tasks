@@ -1,0 +1,8 @@
+.botao {
+  background: #d54b1a;
+  color: white;
+  padding: 7px 15px 7px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none
+}

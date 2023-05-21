@@ -1,0 +1,27 @@
+.tableContent {
+  margin-top: 20px;
+  width: 600px;
+}
+
+.tableContent table {
+  margin-top: 20px;
+  background-color: #e9e6e1;
+  border-radius: 4px;
+  margin: auto;
+  width: 100%;
+  overflow-y: scroll;
+  border: 1px solid red;
+}
+
+.tableContent table tr th {
+  background-color: #d54b1a;
+}
+
+.btnDelete {
+  background-color: tomato;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
