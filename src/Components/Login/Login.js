@@ -1,27 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import styles from './css/Login.module.css';
-import Input from '../Forms/Input';
-import Button from '../Forms/Button';
-import useForm from '../../Hooks/useForm';
+import LoginForm from './LoginForm';
+import LoginCreate from './LoginCreate';
+import { UserContext } from '../../UserContext';
 
 const Login = () => {
-  const usuario = useForm();
-  const senha = useForm('password');
+  const { login } = useContext(UserContext);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('submeteu form');
-  };
+  if (login === true) {
+    <Navigate to="/conta" />;
+  }
 
   return (
-    <div className={styles.loginContainer}>
-      <form onSubmit={handleSubmit} className={styles.loginForm}>
-        <h2>Login do Usuário</h2>
-        <Input label="Usuário" type="text" name="usuario" {...usuario} />
-        <Input label="Senha" type="password" name="senha" {...senha} />
-        <Button>Entrar</Button>
-      </form>
-    </div>
+    <section>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="criar" element={<LoginCreate />} />
+      </Routes>
+    </section>
   );
 };
 
