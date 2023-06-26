@@ -4,7 +4,19 @@
   box-sizing: border-box;
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: 'Spectral', georgia;
+  --cor-fundo: #f1db42;
+  --altura-fundo: 34.375rem;
   font-family: var(--type-first);
+}
+
+.defaultContainer {
+  background-color: var(--cor-fundo);
+  height: var(--altura-fundo);
+}
+
+.App {
+  height: var(--altura-fundo);
+  width: 100%;
 }
 
 h1, h2, h3, h4, p {

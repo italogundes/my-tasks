@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import { BsPlusSquare } from 'react-icons/bs';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import styles from './css/AreaTask.module.css';
 import TableTasks from './TableTasks';
 import Input from '../Forms/Input';
@@ -52,8 +50,7 @@ const AreaTasks = () => {
   }*/
 
   return (
-    <div className={styles.areaTasksContainer}>
-      <Header />
+    <div className="defaultContainer">
       <div className={styles.areaTasks}>
         <h1>my tasks</h1>
         <form onSubmit={handleSubmit} className={styles.formTask}>
@@ -72,7 +69,6 @@ const AreaTasks = () => {
         </form>
         <TableTasks taskList={taskList} setTaskList={setTaskList} />
       </div>
-      <Footer />
     </div>
   );
 };

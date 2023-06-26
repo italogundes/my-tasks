@@ -5,7 +5,7 @@ import { ReactComponent as Logo } from '../../Assets/img/logo.svg';
 import { UserContext } from '../../UserContext';
 
 const Header = () => {
-  const { userLogout } = useContext(UserContext);
+  const { userLogout, data } = useContext(UserContext);
 
   const handleLogout = () => {
     userLogout();
@@ -16,10 +16,13 @@ const Header = () => {
       <NavLink to="/" end className={styles.logo}>
         <Logo />
       </NavLink>
-      <NavLink to="/conta" className={styles.conta}>
-        Usuário Logado
-      </NavLink>
-      <button onClick={handleLogout}>Sair</button>
+      {data ? (
+        <NavLink to="/conta">
+          <button onClick={handleLogout}>Sair</button>Usuário Logado
+        </NavLink>
+      ) : (
+        <NavLink to="/login">Login/Criar</NavLink>
+      )}
     </header>
   );
 };

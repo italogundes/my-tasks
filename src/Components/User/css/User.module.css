@@ -1,0 +1,13 @@
+.userContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.userInfo {
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+.newUser {
+  padding: 10px;
+  margin-top: 10px;
+}

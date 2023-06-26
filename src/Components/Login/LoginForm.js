@@ -3,18 +3,16 @@ import styles from './css/LoginForm.module.css';
 import Input from '../Forms/Input';
 import Button from '../Forms/Button';
 import useForm from '../../Hooks/useForm';
-import { NavLink, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../UserContext';
 
 const LoginForm = () => {
   const usuario = useForm();
   const senha = useForm('password');
   const { userLogin, loading } = useContext(UserContext);
-  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (usuario.validade() && senha.validade()) {
+    if (usuario.validate() && senha.validate()) {
       userLogin(usuario.value, senha.value);
     }
   };
@@ -32,7 +30,6 @@ const LoginForm = () => {
             <Button>Entrar</Button>
           )}
         </form>
-        <NavLink to="/login/criar">Criar uma Conta</NavLink>
       </div>
     </div>
   );
